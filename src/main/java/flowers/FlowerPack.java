@@ -1,5 +1,8 @@
 package flowers;
 
+import lombok.ToString;
+
+@ToString
 public class FlowerPack {
     private int amount;
     private Flower flower;

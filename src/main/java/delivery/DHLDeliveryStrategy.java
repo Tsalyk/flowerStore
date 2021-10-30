@@ -1,11 +1,13 @@
 package delivery;
 
+import flowers.Item;
+
 import java.util.List;
 
 public class DHLDeliveryStrategy implements Delivery {
 
     @Override
-    public void deliver(List<Object> items) {
-        System.out.println("Successful deliver by DHL!");
+    public String deliver(List<Item> items) {
+        return "Delivering by DHL!";
     }
 }

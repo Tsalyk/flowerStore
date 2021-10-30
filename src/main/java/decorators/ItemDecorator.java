@@ -2,10 +2,10 @@ package decorators;
 
 import flowers.Item;
 
-public abstract class Decorator extends Item {
-    private final Item item;
+public abstract class ItemDecorator extends Item {
+    private Item item;
 
-    public Decorator(Item item) {
+    public ItemDecorator(Item item) {
         this.item = item;
     }
 

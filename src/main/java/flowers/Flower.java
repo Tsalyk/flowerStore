@@ -17,7 +17,12 @@ public class Flower extends Item {
     }
 
     @Override
+    public double getPrice() {
+        return price;
+    }
+
     public String getDescription() {
         return flowerType.toString();
     }
+
 }

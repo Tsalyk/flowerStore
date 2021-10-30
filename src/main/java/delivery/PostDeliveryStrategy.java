@@ -1,11 +1,13 @@
 package delivery;
 
+import flowers.Item;
+
 import java.util.List;
 
 public class PostDeliveryStrategy implements Delivery {
 
     @Override
-    public void deliver(List<Object> items) {
-        System.out.println("Successful deliver by Post!");
+    public String deliver(List<Item> items) {
+        return "Delivering by Post!";
     }
 }
